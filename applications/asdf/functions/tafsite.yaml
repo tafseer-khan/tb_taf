@@ -1,0 +1,15 @@
+id: Qme3TCzJNFhgM6ijLy1hV1zAG3tJ4W4pyFVLKYGb8Wkr5N
+description: Returns a socket url to the matched channel
+tags: []
+source: .
+trigger:
+    type: https
+    method: GET
+    paths:
+        - /ws/url
+domains:
+    - GeneratedDomain
+execution:
+    timeout: 10s
+    memory: 10MB
+    call: getsocketurl
